@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import './App.css'
 import Sidenav from './Components/Sidenav'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
     <Sidenav />
-    </>
+    </div>
   )
 }
 
