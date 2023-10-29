@@ -1,6 +1,7 @@
 import React from 'react';
-import dealDiveImg from '/src/assets/deal-dive.png';
-import filmSearchImg from 'src/assets/film-search.png';
+import dealDiveImg from '../assets/dealDive.png';
+import filmSearchImg from '../assets/film-search.png';
+import ProjectItem from './ProjectItem';
 
 function Projects() {
     return (
@@ -10,7 +11,7 @@ function Projects() {
             <div className='grid sm:grid-cols-2 gap-12'>
                 <ProjectItem img={dealDiveImg} title="Deal Dive" />
                 <ProjectItem img={filmSearchImg} title="Film Search" />
-                <ProjectItem img={propertyImg} title="Property Listing" />
+             
             </div>
         </div>
     );
