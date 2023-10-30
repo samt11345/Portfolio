@@ -11,8 +11,8 @@ const data = [
   },
   {
     year: 2020,
-    title: "#1 Cochran Mazda/Volkswagon",
-    duration: 2023,
+    title: "#1 Cochran Mazda/Volkswagen",
+    duration: "2023",
     details:
       "Collaborated with team members to achieve daily goals and meet company objectives. Operated power jacks and forklifts to maneuver products onto load trailers and trucks.",
   },
@@ -22,15 +22,15 @@ const data = [
     duration: "2020",
     details:
       "Maintained multiple projects while following precise recipe execution. " +
-      "Collaborated with team members to complete tasks and maintain smooth running of bakery.",
+      "Collaborated with team members to complete tasks and maintain the smooth running of the bakery.",
   },
   {
     year: 2016,
     title: "Customer Service Representative",
     duration: "2017",
     details:
-      "Point of contact for customers for both sales and services including scheduling, issue resolution, and follow up to ensure customer satisfaction. " +
-      "Liaison between customer and technicians with goal of meeting all needs and building return customer base to grow business",
+      "Point of contact for customers for both sales and services, including scheduling, issue resolution, and follow-up to ensure customer satisfaction. " +
+      "Liaison between the customer and technicians with the goal of meeting all needs and building a return customer base to grow the business.",
   },
   {
     year: 2019,
@@ -45,10 +45,11 @@ const data = [
     title: "Loader services",
     duration: "2019",
     details:
-      "Inspected items to identify discrepancies and damages and reported to supervisor. Collaborated with team members to achieve daily goals and meet company objectives." +
+      "Inspected items to identify discrepancies and damages and reported to the supervisor. Collaborated with team members to achieve daily goals and meet company objectives. " +
       "Operated power jacks and forklifts to maneuver products onto load trailers and trucks.",
   },
 ];
+
 function Work() {
   return (
     <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
@@ -59,7 +60,7 @@ function Work() {
           year={item.year}
           title={item.title}
           duration={item.duration}
-            details={item.details}
+          details={item.details}
         />
       ))}
     </div>

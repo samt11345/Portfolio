@@ -3,6 +3,11 @@ import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
+  // Replace 'https://www.linkedin.com/in/samuel-williams-689591270/' with your LinkedIn profile URL
+  const linkedinProfileUrl = "https://www.linkedin.com/in/samuel-williams-689591270/";
+  const instagramProfileUrl = "https://www.instagram.com/samt11345/";
+  const githubProfileUrl = "https://github.com/samt11345";
+
   return (
     <div id="Main">
       <img
@@ -19,9 +24,8 @@ const Main = () => {
             I'm a
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Developer",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 "Coder",
                 1000,
                 "Tech Enthusiast",
@@ -35,9 +39,18 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full ">
-            <FaLinkedinIn className="cursor-pointer" size={20} />
+            {/* Replace 'https://www.linkedin.com/in/samuel-williams-689591270/' with your LinkedIn profile URL */}
+            <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="cursor-pointer" size={20} />
+            </a>
+           {/* Replace 'https://www.instagram.com/samt11345/' with your Instagram profile URL */}
+           <a href = {instagramProfileUrl} target="_blank" rel="noopener noreferrer">
             <FaInstagram className="cursor-pointer" size={20} />
+           </a>
+            {/* Replace 'https://github.com/samt11345/' with your GitHub profile URL */}
+            <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer">
             <FaGithub className="cursor-pointer" size={20} />
+            </a>
           </div>
         </div>
       </div>
