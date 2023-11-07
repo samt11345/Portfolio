@@ -9,9 +9,12 @@ function Projects() {
             <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Projects</h1>
             <p className='text-center py-8'></p>
             <div className='grid sm:grid-cols-2 gap-12'>
-                <ProjectItem img={dealDiveImg} title="Deal Dive" />
-                <ProjectItem img={filmSearchImg} title="Film Search" />
-             
+                <a href="https://deal-dive-dcc6c738ad30.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <ProjectItem img={dealDiveImg} title="Deal Dive" />
+                </a>
+                <a href="https://saikoub.github.io/FilmSearch/" target="_blank" rel="noopener noreferrer">
+                    <ProjectItem img={filmSearchImg} title="Film Search" />
+                </a>
             </div>
         </div>
     );
