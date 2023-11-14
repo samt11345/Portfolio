@@ -2,6 +2,7 @@ import React from 'react';
 import dealDiveImg from '../assets/dealDive.png';
 import filmSearchImg from '../assets/film-search.png';
 import ProjectItem from './ProjectItem';
+import ssssdoku from '../assets/ssssdoku.png';
 
 function Projects() {
     return (
@@ -14,6 +15,9 @@ function Projects() {
                 </a>
                 <a href="https://saikoub.github.io/FilmSearch/" target="_blank" rel="noopener noreferrer">
                     <ProjectItem img={filmSearchImg} title="Film Search" />
+                </a>
+                <a href="https://dry-sands-01310-b65cef519a9a.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <ProjectItem img={ssssdoku} title="SSSSdoku" />
                 </a>
             </div>
         </div>
